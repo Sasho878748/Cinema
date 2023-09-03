@@ -1,0 +1,103 @@
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+#pagination-block-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 8px;
+}
+.tui-pagination.tui-pagination .tui-page-btn{
+border:none
+}
+
+.tui-page-btn.tui-is-disabled.tui-first{
+display: none;
+}
+.tui-pagination{
+    text-align: center;
+}
+
+ .tui-page-btn.important-page{
+    border-radius: 50%;
+    
+} 
+
+.tui-pagination > .tui-page-btn.important-page {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #B7B7B7;
+    color: #B7B7B7;
+    font-size: 10px;
+}
+.tui-page-btn.tui-is-selected.important-page{
+    background: var(--linear-top-light);
+    border: none;
+    color: white;
+}
+
+.tui-pagination .tui-first+.tui-prev, .tui-pagination .custom-class-next+.tui-next, .tui-pagination > .tui-page-btn.tui-next-is-ellip > .tui-ico-ellip, .tui-pagination > .tui-page-btn.tui-prev-is-ellip > .tui-ico-ellip {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin: 0;
+}
+
+.tui-pagination > .tui-page-btn.tui-last, .tui-pagination > .tui-page-btn.is-disabled.tui-last, .tui-pagination > .tui-page-btn.tui-next, .tui-pagination > .tui-page-btn.is-disabled.tui-next, .tui-pagination > .tui-page-btn.tui-prev, .tui-pagination > .tui-page-btn.is-disabled.tui-prev, .tui-pagination > .tui-page-btn.tui-first, .tui-pagination > .tui-page-btn.is-disabled.tui-first {
+    height: 20px;
+    line-height: 20px;
+}
+
+.tui-pagination > .tui-page-btn.tui-next-is-ellip, .tui-pagination > .tui-page-btn.tui-prev-is-ellip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+}
+
+.tui-pagination .tui-first-child.tui-is-selected.important-page, .tui-pagination .tui-last-child.tui-is-selected.important-page{
+    border-right: none;
+    border-left: none;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    #pagination-block-div {
+        gap: 16px;
+    }
+
+    .tui-pagination > .tui-page-btn.important-page {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .tui-pagination > .tui-page-btn.tui-last, .tui-pagination > .tui-page-btn.is-disabled.tui-last, .tui-pagination > .tui-page-btn.tui-next, .tui-pagination > .tui-page-btn.is-disabled.tui-next, .tui-pagination > .tui-page-btn.tui-prev, .tui-pagination > .tui-page-btn.is-disabled.tui-prev, .tui-pagination > .tui-page-btn.tui-first, .tui-pagination > .tui-page-btn.is-disabled.tui-first {
+        height: 28px;
+        line-height: 28px;
+    }
+
+    .tui-pagination > .tui-page-btn.tui-next-is-ellip, .tui-pagination > .tui-page-btn.tui-prev-is-ellip {
+        width: 12px;
+        height: 14px;
+    }
+}
