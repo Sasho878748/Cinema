@@ -47,3 +47,5 @@ export async function renderMovie(movie) {
   imgBlock.innerHTML = murcupImg;
   movieBlock.innerHTML = getMovie;
 }
+
+// 111
